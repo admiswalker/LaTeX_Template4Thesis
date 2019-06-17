@@ -3,9 +3,6 @@
 # エントリーポイントを設定したファイル (処理の都合で拡張子は記入しない)
 MAIN = main
 
-# 表紙
-COVER = cover_page
-
 # 追跡対象のファイル (変更されたときのみコンパイル)
 SRCDIR = ./*.tex
 BIBDIR = ./*.bib
@@ -32,15 +29,8 @@ DVIPDFMX  = dvipdfmx
 EXTRACTBB = extractbb
 BIB       = pbibtex
 
-cover_exists := $(shell find -name $(COVER).pdf)
-define makecover
-	$(TEX) -output-directory=$(TEMPDIR) $(COVER)
-	(cd $(TEMPDIR); $(DVIPDFMX) $^;)
-endef
-
 $(TARGET): $(SRCS) $(XBBS)
 	mkdir -p $(TEMPDIR)
-	$(if $(cover_exists) ,$(makecover))
 	@echo -e "\n============================================================\n"
 	@echo -e "SRCS: \n$(SRCS)\n"
 	@echo -e "BIBS: \n$(BIBS)\n"
