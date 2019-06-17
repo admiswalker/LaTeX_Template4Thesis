@@ -20,8 +20,8 @@
 % default だとバランスが悪いので、日本語に合わせて文字の大きさを調整する。
 \usepackage[scaled=1.05,helvratio=0.95]{newtxtext}
 
-% 画像の取り扱いに必要
-\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{graphicx} % 画像の添付に必要
+\usepackage[dvipdfmx]{color}    % 画像の添付に必要
 
 % 表でセルを複数列で結合する
 \usepackage{multicol}
@@ -30,8 +30,8 @@
 \usepackage{amsmath}
 
 % citep や citet を有効にする
-\usepackage{natbib}
-\usepackage{url}
+\usepackage{natbib} % 参考文献を bib で管理するために必要．
+\usepackage{url}    % 参考文献のリンク指定オプションに必要．
 
 % (Okumura, 2009) などを (Okumura 2009) とする
 \setcitestyle{aysep={}}
@@ -54,9 +54,6 @@
 \newcommand{\HI}{\mbox{\ion{H}{1}}} % 中性原子ガス（HI 領域）の例
 \newcommand{\bs}{\symbol{92}} % backslash
 
-
-\usepackage[dvipdfmx]{graphicx}
-\usepackage[dvipdfmx]{color}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
