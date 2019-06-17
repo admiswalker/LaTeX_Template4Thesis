@@ -86,19 +86,16 @@
 \begin{document}
 
 \input{FrontCover} % 表紙
-
-\frontmatter
-
 \include{00_Abstract}
 
-\tableofcontents
-\listoffigures
-\listoftables
+\frontmatter     % make page number roman
+\tableofcontents % 目次
+%\listoffigures  % 図目次
+%\listoftables   % 表目次
 
-\mainmatter
-
-% include を使うことで、別ファイルに分割することができます。
-\include{Introduction}
+\mainmatter      % make page number arabic
+\include{01_Introduction}
+%\include{Introduction}
 \include{Review}
 \include{WhatYouDid}
 \include{Discussion}
