@@ -7,8 +7,8 @@ MAIN = main
 SRCDIR = ./*.tex
 BIBDIR = ./*.bib
 
-FIGPNG = ./fig/*.png
-FIGPDF = ./fig/*.pdf
+FIGPNG = ./figs/*.png
+FIGPDF = ./figs/*.pdf
 
 TARGET = out.pdf
 
