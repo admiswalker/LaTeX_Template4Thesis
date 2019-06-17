@@ -96,14 +96,17 @@
 \mainmatter      % make page number arabic
 \include{01_Introduction}
 \include{02_Device}
-\include{Discussion}
-\include{Conclusion}
-\include{Appendix}
-\include{Acknowledgments}
+\include{03_Method}
+\include{04_Implementation}
+\include{05_Results}
+\include{06_Discussion}
+\include{07_Conclusion}
+\include{08_Appendix}
+\include{09_Acknowledgments}
 
-\renewcommand{\bibname}{引用文献} % jecon.bst だと bib の doi を読み込めずエラーを吐くので，ここだけ，削除すること．
+\renewcommand{\bibname}{参考文献} % jecon.bst だと bib の doi を読み込めずエラーを吐くので，ここだけ，削除すること．
 \bibliographystyle{jecon}
 \nocite{*} % 文献の引用がない場合のエラーを抑制．
-\bibliography{thesis}
+\bibliography{10_References}
 
 \end{document}
